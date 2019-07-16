@@ -34,32 +34,36 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" method="POST">
+
+				<span class="contact100-form-title">
+					<img src="https://www.upc.edu.pe/static/img/logo_upc_red.png" alt="">
+				</span>
+
 				<span class="contact100-form-title">
 					Evento de Carreras UPC
 				</span>
 
-
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
+				<div class="wrap-input100 validate-input" data-validate="Los Nombres son requeridos">
 					<label class="label-input100" for="name">Nombres</label>
 					<input id="name" class="input100" type="text" name="name" placeholder="Nombres...">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
+				<div class="wrap-input100 validate-input" data-validate="Los Apellidos son requeridos">
 					<label class="label-input100" for="name">Apellidos</label>
 					<input id="lastname" class="input100" type="text" name="lastname" placeholder="Apellidos...">
 					<span class="focus-input100"></span>
 				</div>
 
 
-				<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+				<div class="wrap-input100 validate-input" data-validate="Email Valido es requerido: ex@abc.xyz">
 					<label class="label-input100" for="email">Email</label>
 					<input id="email" class="input100" type="text" name="email" placeholder="Email...">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
+				<div class="wrap-input100 validate-input" data-validate="Celular es requerido">
 					<label class="label-input100" for="name">Celular</label>
 					<input id="phone" class="input100" type="text" name="phone" placeholder="Celular...">
 					<span class="focus-input100"></span>
@@ -68,12 +72,12 @@
 
 				<div class="wrap-input100">
 					<div class="label-input100">Colegio</div>
-					<div>
-						<select class="js-select2" name="service">
-							<option>Seleccionar</option>
-							<option>COLEGIO INNOVA COMAS</option>
-							<option>COLEGIO INNOVA CALLAO</option>
-							<option>COLEGIO INNOVA AREQUIPA</option>
+					<div data-validate="Seleccionar un Colegio">
+						<select class="js-select2 input100" name="colegio" id="colegio">
+							<option value="">Seleccionar</option>
+							<option value="0">COLEGIO INNOVA COMAS</option>
+							<option value="1">COLEGIO INNOVA CALLAO</option>
+							<option value="2">COLEGIO INNOVA AREQUIPA</option>
 						</select>
 						<div class="dropDownSelect2"></div>
 					</div>
@@ -82,20 +86,23 @@
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
-						Send
+						Enviar
 					</button>
 				</div>
 
 				<div class="contact100-form-social flex-c-m">
-					<a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+					<a href="https://www.facebook.com/upcedu/" class="contact100-form-social-item flex-c-m bg1 m-r-5"
+						target="_blank">
 						<i class="fa fa-facebook-f" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+					<a href="https://twitter.com/UPCedu" class="contact100-form-social-item flex-c-m bg2 m-r-5"
+						target="_blank">
 						<i class="fa fa-twitter" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="contact100-form-social-item flex-c-m bg3">
+					<a href="https://www.youtube.com/channel/UCbumQXrqOraEDnsf6VS8VYA"
+						class="contact100-form-social-item flex-c-m bg3" target="_blank">
 						<i class="fa fa-youtube-play" aria-hidden="true"></i>
 					</a>
 				</div>
